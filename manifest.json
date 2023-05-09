@@ -1,0 +1,19 @@
+{
+    "name": "Sans Typing",
+    "description": "When typing plays sans talking sounds.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab", "scripting", "input"
+    ],
+    "host_permissions": [],
+    "action": {
+    "default_title": "Sans Typing",
+    "default_icon": "small.png",
+    "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["index.js"]
+    }]
+}
